@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Javascript_Projects/FileContentIndex
+/.vs/Javascript_Projects/v17/.wsuo
+/.vs/slnx.sqlite
+/.vs/VSWorkspaceState.json
+/Javascript_Code_Samples/.vs/Javascript_Code_Samples/FileContentIndex/f717bef8-00f6-4386-b019-f001a937273c.vsidx
+/Javascript_Code_Samples/.vs/Javascript_Code_Samples/v17/.suo
+/Javascript_Code_Samples/.vs/Javascript_Code_Samples/v17/.wsuo
+/Javascript_Code_Samples/.vs/Javascript_Code_Samples/v17/DocumentLayout.json
+/Javascript_Code_Samples/.vs/ProjectSettings.json
+/Javascript_Code_Samples/.vs/slnx.sqlite
