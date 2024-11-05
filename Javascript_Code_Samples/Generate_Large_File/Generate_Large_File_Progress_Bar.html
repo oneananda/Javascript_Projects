@@ -5,6 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Generate Large File with Progress Bar</title>
   <style>
+      html, body {
+          height: 100%;
+          margin: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      divCenter {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+      }
     /* Basic styling for the modal */
     .modal {
       display: none;
@@ -38,8 +52,14 @@
   </style>
 </head>
 <body>
-  <button id="generateFile">Generate Large File</button>
-
+    <div class="divCenter">
+        <button id="generateFile">Generate Large File</button>
+        <br />
+        <br />
+        <div>
+            <label id="lblResult"></label>
+        </div>
+    </div>
   <!-- Modal for progress -->
   <div id="progressModal" class="modal">
     <p>Generating File...</p>

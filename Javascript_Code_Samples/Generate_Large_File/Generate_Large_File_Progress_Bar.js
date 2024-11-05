@@ -44,8 +44,9 @@
           const blob = new Blob([largeText], { type: 'text/plain' });
           const url = URL.createObjectURL(blob);
           const a = document.createElement('a');
+          const fileName = 'largeFile_' + generateAlphaGUID().substring(0, 5) + '.txt';
           a.href = url;
-          a.download = 'largeFile_' + generateAlphaGUID().substring(0, 5) + '.txt';
+          a.download = fileName;
           a.style.display = 'none';
           document.body.appendChild(a);
           a.click();
@@ -55,7 +56,9 @@
           document.body.removeChild(a);
           modal.style.display = 'none';
 		  const generateButton = document.getElementById('generateFile');
-		  generateButton.disabled = false;
+          generateButton.disabled = false;
+          const labelResult = document.getElementById('lblResult');
+          labelResult.innerHTML = 'File generated : ' + fileName
         }
       }
       // Start generating the file
